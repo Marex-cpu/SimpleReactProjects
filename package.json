@@ -1,5 +1,6 @@
 {
   "name": "simple-react-projects",
+  "author": "Marko Petrovic",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
