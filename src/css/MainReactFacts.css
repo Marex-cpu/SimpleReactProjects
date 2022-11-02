@@ -1,0 +1,135 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 5rem 10rem 0;
+}
+
+.mainTitle {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.mainFacts li {
+  margin-left: 6rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  z-index: 1;
+}
+.mainFacts li::marker {
+  color: #61dafb;
+  font-size: 3rem;
+}
+
+.linkToHome {
+  display: inline-block;
+  margin-top: 5rem;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: #000 solid 2px;
+}
+.linkToHome:hover {
+  color: #61dafb;
+  border: #61dafb solid 2px;
+}
+
+.reactIcon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30rem;
+  z-index: -1;
+}
+
+/* dark mode */
+
+.main.dark {
+  background-color: #000;
+}
+
+.main.dark > .mainTitle {
+  color: #fff;
+}
+
+.main.dark > .mainFacts li {
+  color: #fff;
+}
+
+.main.dark > .reactIcon {
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.main.dark > .linkToHome {
+  color: #fff;
+  border: #fff solid 2px;
+}
+
+.main.dark > .linkToHome:hover {
+  color: #61dafb;
+  border: #61dafb solid 2px;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 5rem 8rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 5rem 5rem 0;
+  }
+}
+@media screen and (max-width: 510px) {
+  .main {
+    padding: 3rem 2.5rem 0;
+  }
+  .mainTitle {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .mainFacts li {
+    margin-left: 4.5rem;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    z-index: 1;
+  }
+  .mainFacts li::marker {
+    color: #61dafb;
+    font-size: 2.5rem;
+  }
+  .linkToHome {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main {
+    padding: 2rem 1.5rem 0;
+  }
+  .mainTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .mainFacts li {
+    margin-left: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.6rem;
+    z-index: 1;
+  }
+  .mainFacts li::marker {
+    color: #61dafb;
+    font-size: 2.2rem;
+  }
+  .linkToHome {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+}

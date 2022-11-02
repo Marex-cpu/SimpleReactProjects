@@ -4,12 +4,12 @@ import Project from "./Project";
 
 function Main() {
   return (
-    <div className='wrapper'>
+    <main className='wrapper'>
       <div className='contentBorder'>
         <Project />
         <div className='line'></div>
       </div>
-    </div>
+    </main>
   );
 }
 
