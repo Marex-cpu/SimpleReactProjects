@@ -1,0 +1,27 @@
+.note.new {
+  background-color: #00ffff;
+}
+
+.note.new > textarea {
+  font-size: 1.6rem;
+  background-color: #00ffff;
+  border: none;
+  resize: none;
+  outline: none;
+  height: 10rem;
+}
+
+.note.new > .noteFooter > small {
+  font-weight: bold;
+}
+
+.note.new > .noteFooter .saveBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.note.new > .noteFooter .saveBtn:hover {
+  border: 1px solid #000;
+}

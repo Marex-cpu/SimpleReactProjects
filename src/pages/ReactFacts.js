@@ -4,17 +4,20 @@ import NavReactFacts from "../components/NavReactFacts";
 import "../css/ReactFacts.css";
 
 function ReactFacts() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const currentThemeColor = localStorage.getItem("nav");
+  const [darkMode, setDarkMode] = React.useState(
+    currentThemeColor === "dark" ? true : false
+  );
 
-  useEffect(() => {
-    //localStorage check
-    const currentThemeColor = localStorage.getItem("nav");
-    if (currentThemeColor === "dark") {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   //localStorage check
+  //   const currentThemeColor = localStorage.getItem("nav");
+  //   if (currentThemeColor === "dark") {
+  //     setDarkMode(true);
+  //   } else {
+  //     setDarkMode(false);
+  //   }
+  // }, []);
 
   function toggleDarkMode() {
     if (darkMode) {
