@@ -3,17 +3,24 @@ import "../css/AddNote.css";
 
 function AddNote({ handleAddNote }) {
   const [noteText, setNoteText] = useState("");
+  const maxNumOfChars = 200;
 
   function handleChange(e) {
-    setNoteText(e.target.value);
+    if (maxNumOfChars - e.target.value.length >= 0) {
+      setNoteText(e.target.value);
+    }
   }
 
   function handleSaveClick() {
     if (noteText.trim().length > 0) {
       handleAddNote(noteText);
-      setNoteText("");
     }
+    setNoteText("");
   }
+
+  // function countCharacters() {
+
+  // }
 
   return (
     <div className='note new'>
@@ -22,9 +29,16 @@ function AddNote({ handleAddNote }) {
         rows='8'
         placeholder='Type to add a note...'
         onChange={handleChange}
+        value={noteText}
       ></textarea>
       <div className='noteFooter'>
-        <small>200 Remaining</small>
+        <small
+          style={{
+            color: maxNumOfChars - noteText.length <= 10 ? "red" : "black",
+          }}
+        >
+          {maxNumOfChars - noteText.length} Remaining
+        </small>
         <button className='saveBtn' onClick={handleSaveClick}>
           Save
         </button>

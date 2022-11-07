@@ -17,6 +17,11 @@ function NotesClone() {
     },
   ]);
 
+  function deleteNote(id) {
+    const newNote = notes.filter((note) => note.id !== id);
+    setNotes(newNote);
+  }
+
   const addNote = (text) => {
     const date = new Date();
     //on click save button we regenerate new Note
@@ -25,13 +30,16 @@ function NotesClone() {
       text: text,
       date: date.toLocaleDateString(),
     };
-
     setNotes((prevNotes) => [...prevNotes, newNote]);
   };
 
   return (
     <div className='notesContainer'>
-      <NotesList notes={notes} handleAddNote={addNote} />
+      <NotesList
+        notes={notes}
+        handleAddNote={addNote}
+        handleDeleteNote={deleteNote}
+      />
     </div>
   );
 }

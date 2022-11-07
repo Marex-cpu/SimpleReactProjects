@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fef68a;
-  padding: 1rem;
+  padding: 1.5rem 1.5rem 1rem;
   border-radius: 1rem;
-  min-height: 20rem;
+  min-height: 25rem;
+  white-space: pre-wrap;
 }
 
 .noteFooter {
@@ -16,4 +17,8 @@
 .deleteIcon {
   cursor: pointer;
   font-size: 1.8rem;
+  transition: color 300ms;
+}
+.deleteIcon:hover {
+  color: red;
 }
