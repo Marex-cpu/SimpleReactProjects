@@ -9,6 +9,10 @@
   white-space: pre-wrap;
 }
 
+.noteText {
+  overflow-wrap: break-word;
+}
+
 .noteFooter {
   display: flex;
   align-items: center;

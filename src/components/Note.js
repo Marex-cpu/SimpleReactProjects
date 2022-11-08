@@ -13,7 +13,7 @@ function Note({ id, text, date, handleDeleteNote }) {
 
   return (
     <div className='note'>
-      <span>{text}</span>
+      <span className='noteText'>{text}</span>
       <div className='noteFooter'>
         <small>{date}</small>
         <BsFillTrashFill onClick={toggleModal} className='deleteIcon' />

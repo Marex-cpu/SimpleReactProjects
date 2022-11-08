@@ -4,3 +4,27 @@
   min-height: 100vh;
   background-color: #f3f3f3;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  max-width: 140rem;
+  margin: 0 auto 3rem;
+  background-color: #ddd;
+  border-radius: 1rem;
+}
+
+.search > .searchInput {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.headerNotesClone {
+  max-width: 140rem;
+  margin: 0 auto 3rem;
+}

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import NotesList from "../components/NotesList";
 import "../css/NotesClone.css";
+import Search from "../components/Search";
+import HeaderNotesClone from "../components/HeaderNotesClone";
 
 function NotesClone() {
   const [notes, setNotes] = useState([
@@ -17,10 +19,21 @@ function NotesClone() {
     },
   ]);
 
-  function deleteNote(id) {
-    const newNote = notes.filter((note) => note.id !== id);
-    setNotes(newNote);
-  }
+  const [searchText, setSearchText] = useState("");
+
+  //save changes - addNewNote - deleteNote
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+  }, [notes]);
 
   const addNote = (text) => {
     const date = new Date();
@@ -33,10 +46,19 @@ function NotesClone() {
     setNotes((prevNotes) => [...prevNotes, newNote]);
   };
 
+  function deleteNote(id) {
+    const newNote = notes.filter((note) => note.id !== id);
+    setNotes(newNote);
+  }
+
   return (
     <div className='notesContainer'>
+      <HeaderNotesClone />
+      <Search handleSearchNote={setSearchText} />
       <NotesList
-        notes={notes}
+        notes={notes.filter((note) =>
+          note.text.toLowerCase().includes(searchText)
+        )}
         handleAddNote={addNote}
         handleDeleteNote={deleteNote}
       />
