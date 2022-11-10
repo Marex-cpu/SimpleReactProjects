@@ -31,10 +31,6 @@ function NotesClone() {
     }
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
-  }, [notes]);
-
   const addNote = (text) => {
     const date = new Date();
     //on click save button we regenerate new Note
@@ -44,10 +40,13 @@ function NotesClone() {
       date: date.toLocaleDateString(),
     };
     setNotes((prevNotes) => [...prevNotes, newNote]);
+    const currentNotes = [...notes, newNote];
+    localStorage.setItem("react-notes-app-data", JSON.stringify(currentNotes));
   };
 
   function deleteNote(id) {
     const newNote = notes.filter((note) => note.id !== id);
+    localStorage.setItem("react-notes-app-data", JSON.stringify(newNote));
     setNotes(newNote);
   }
 

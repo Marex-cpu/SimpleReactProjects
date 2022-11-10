@@ -28,3 +28,16 @@
   max-width: 140rem;
   margin: 0 auto 3rem;
 }
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .notesContainer {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notesContainer {
+    padding: 2rem;
+  }
+}

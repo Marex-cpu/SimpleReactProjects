@@ -1,5 +1,60 @@
 .projectWrapper {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: calc(100% - 5.3rem);
+  background-color: #eee;
+  padding: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  overflow-y: auto;
+}
+
+.projectWrapper .aboutProject {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.projectWrapper .projectName,
+.infoProject,
+.linkToProject {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.projectWrapper .projectName span {
+  color: #61dafb;
+  animation-name: wordProjectName;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wordProjectName {
+  0% {
+    color: #61dafb;
+  }
+  50% {
+    color: #000;
+  }
+  100% {
+    color: #61dafb;
+  }
+}
+
+.projectWrapper .infoProject span {
+  font-style: italic;
+}
+
+.linkToProject > .linkBtn {
+  color: #61dafb;
+  transition: color 300ms;
+}
+.linkToProject > .linkBtn:hover {
+  color: #2dc9f4;
+}
+
+.projectWrapper .imgProject {
+  max-width: 70rem;
+  max-height: 70rem;
 }
