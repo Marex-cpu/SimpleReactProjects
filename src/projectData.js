@@ -17,4 +17,13 @@ export default [
     textLink: "Notes Clone",
     projectImg: "/public/images/project2.png",
   },
+  {
+    id: 3,
+    projectName: "Tenzies game",
+    projectInfo:
+      "The purpose of this project was to be able to switch to dark mode. As well as a page that remembers and saves the change from light to dark mode and inversely. Also everything is responsive.",
+    projectLink: "/tenzies-game",
+    textLink: "Tenzies game",
+    projectImg: "/public/images/project1.png",
+  },
 ];

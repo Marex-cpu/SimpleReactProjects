@@ -9,16 +9,6 @@ function ReactFacts() {
     currentThemeColor === "dark" ? true : false
   );
 
-  // useEffect(() => {
-  //   //localStorage check
-  //   const currentThemeColor = localStorage.getItem("nav");
-  //   if (currentThemeColor === "dark") {
-  //     setDarkMode(true);
-  //   } else {
-  //     setDarkMode(false);
-  //   }
-  // }, []);
-
   function toggleDarkMode() {
     if (darkMode) {
       localStorage.setItem("nav", "light");
