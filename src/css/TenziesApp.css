@@ -20,6 +20,22 @@
   border-radius: 1rem;
 }
 
+/* style title and instructions */
+.tenziesTitle {
+  margin-bottom: 2rem;
+  letter-spacing: 1rem;
+}
+.tenziesTitle .tenz {
+  color: #5035ff;
+}
+
+.tenzInstructions {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* style dices */
 .dieContainer {
   display: grid;
   grid-template-columns: repeat(5, 70px);
@@ -35,10 +51,45 @@
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 3.81277px;
   font-weight: bolder;
-  font-size: 3.5rem;
   color: #232323;
   cursor: pointer;
   transition: all 300ms;
+  /* dieFace */
+  display: grid;
+  column-gap: 10px;
+  grid-template-areas:
+    "a . c"
+    "e g f"
+    "d . b";
+}
+
+.dieDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #232323;
+}
+
+.dieDot:nth-child(1) {
+  grid-area: a;
+}
+.dieDot:nth-child(2) {
+  grid-area: b;
+}
+.dieDot:nth-child(3) {
+  grid-area: c;
+}
+.dieDot:nth-child(4) {
+  grid-area: d;
+}
+.dieDot:nth-child(5) {
+  grid-area: e;
+}
+.dieDot:nth-child(6) {
+  grid-area: f;
+}
+.dieDot:nth-child(odd):last-child {
+  grid-area: g;
 }
 
 .tenzeieBtn {
@@ -62,4 +113,35 @@
 }
 .tenzeieBtn:active {
   box-shadow: 0 0 10px 0 #5035ff inset, 0 0 10px -4px #5035ff;
+}
+
+/* responsive */
+@media screen and (max-width: 678px) {
+  .tenzeieWrapper {
+    padding: 2rem;
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .dieContainer {
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 1rem;
+  }
+
+  .dieContainer .die {
+    column-gap: 8px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+  .tenzInstructions {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .tenzeieBtn {
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+  }
 }

@@ -7,7 +7,10 @@ function Die({ value, isHeld, handleClick }) {
       className='die'
       style={{ background: isHeld ? "#59e391" : "#ffffff" }}
     >
-      {value}
+      {[...Array(value)].map((el, index) => (
+        <span key={index} className='dieDot'></span>
+      ))}
+      {/* {value} */}
     </div>
   );
 }

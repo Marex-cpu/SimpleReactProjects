@@ -21,9 +21,9 @@ export default [
     id: 3,
     projectName: "Tenzies game",
     projectInfo:
-      "The purpose of this project was to be able to switch to dark mode. As well as a page that remembers and saves the change from light to dark mode and inversely. Also everything is responsive.",
+      "Tenzi is the ultimate math game! Like most dice games, Tenzi can be played many ways. The most basic way is for each player to take 10 dice and roll. The first player to get matching numbers on all dice yells “Tenzi!” and wins. This project is based on that idea. Try it and have fun :)",
     projectLink: "/tenzies-game",
     textLink: "Tenzies game",
-    projectImg: "/public/images/project1.png",
+    projectImg: "/public/images/project3.png",
   },
 ];

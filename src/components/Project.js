@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Project.css";
-// import projectImage from "../images/project1.png";
 
 function Project({ projectData, currentIndex }) {
   console.log(projectData);
