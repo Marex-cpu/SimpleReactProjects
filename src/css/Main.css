@@ -50,3 +50,22 @@
 .nextBtn:hover {
   color: #212121;
 }
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .containerButtons .prevBtn {
+    margin-right: 7rem;
+  }
+  .containerButtons .nextBtn {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .containerButtons .prevBtn {
+    margin-right: 2.5rem;
+  }
+  .containerButtons .nextBtn {
+    margin-left: 2.5rem;
+  }
+}
