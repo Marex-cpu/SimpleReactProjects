@@ -1,0 +1,62 @@
+.calculatorContainer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  font-family: "Open Sans", sans-serif;
+}
+
+.calculatorGrid {
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem;
+  grid-template-columns: repeat(4, 8.5rem);
+  grid-template-rows: minmax(8rem, auto) repeat(5, 8.5rem);
+}
+.calculatorGrid > button {
+  font-family: "Open Sans", sans-serif;
+  background: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border: #fff 1px solid;
+  outline: none;
+  transition: all 300ms;
+}
+.calculatorGrid > button:hover,
+.calculatorGrid > button:focus {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.span-two.equally:hover,
+.span-two.equally:focus {
+  background: #00ff6c;
+}
+
+.output {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 2.5rem;
+}
+
+.output .prevOpernad {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+.output .currOperand {
+  color: #fff;
+  font-size: 2.5rem;
+  inline-size: 32rem;
+  overflow-wrap: break-word;
+  text-align: right;
+}

@@ -28,11 +28,11 @@ export default [
   },
   {
     id: 4,
-    projectName: "Quizzical",
+    projectName: "Calculator",
     projectInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus temporibus debitis repellendus iusto modi veniam quia. Sequi quas labore ipsum rem! Sed nostrum atque nemo distinctio ipsa repudiandae rerum beatae natus consequuntur qui veniam maxime ad, eligendi sint architecto consequatur id, in quaerat rem expedita? Necessitatibus, atque excepturi? Modi!",
-    projectLink: "/quizzical-app",
-    textLink: "Quizzical",
+    projectLink: "/calculator-app",
+    textLink: "Calculator",
     // projectImg: "images/project3.png",
   },
 ];
