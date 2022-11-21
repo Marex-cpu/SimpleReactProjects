@@ -21,7 +21,7 @@ function ReactFacts() {
   }
 
   return (
-    <div className='container'>
+    <div className='containerReactFacts'>
       <NavReactFacts darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <MainReactFacts darkMode={darkMode} />
     </div>

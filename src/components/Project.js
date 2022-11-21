@@ -6,7 +6,6 @@ import "../css/Project.css";
 function Project({ projectData, currentIndex }) {
   return (
     <div className='projectWrapper'>
-      <h2 className='aboutProject'>About project</h2>
       <p className='projectName'>
         Project name: <br />{" "}
         <span>{projectData[currentIndex].projectName}</span>{" "}

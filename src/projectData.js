@@ -3,7 +3,7 @@ export default [
     id: 1,
     projectName: "React Facts",
     projectInfo:
-      "The purpose of this project was to be able to switch to dark mode. As well as a page that remembers and saves the change from light to dark mode and inversely. Also everything is responsive.",
+      ' In this project, the idea was to enable switching to dark or light mode. In order to succeed in this, I used the React hook "useState". It was also necessary to save the state change every time so that the browser remembers which mode it remains in even after leaving the page. Using "localStorage" helped me with that.',
     projectLink: "/react-facts",
     textLink: "React Facts",
     projectImg: "images/project1.png",
@@ -12,7 +12,7 @@ export default [
     id: 2,
     projectName: "Notes Clone",
     projectInfo:
-      "As the name suggests, this is a simplified clone of Notes. The goal was to work out the logic of adding a new note and deleting it. A search bar has also been created, it allows you to type a word and find the required text based on it.",
+      'As the name suggests, this is a simplified clone of Notes. The goal was to work out the logic of adding a new note and deleting it. A search bar has also been created, it allows you to type a word and find the required text based on it. I added that when deleting a note, a modal opens that warns us and asks if we are sure we want to perform that action. And in this project I used "localStorage", this time together with "useEffect" hook, in order to update and remember every change, every note added and deleted.',
     projectLink: "/notes-clone",
     textLink: "Notes Clone",
     projectImg: "images/project2.png",

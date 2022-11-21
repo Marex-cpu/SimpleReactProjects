@@ -5,9 +5,10 @@ import "../css/Home.css";
 
 function Home() {
   return (
-    <div>
+    <div className='container'>
       <Header />
       <Main />
+      <footer className='footer'>Powered by Marko Petrovic</footer>
     </div>
   );
 }
