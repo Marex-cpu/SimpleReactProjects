@@ -5,7 +5,7 @@ import "../css/Project.css";
 import { useMediaQuery } from "react-responsive";
 
 function Project({ projectData, currentIndex }) {
-  const [readMore, setReadMore] = useState(true);
+  const [readMore, setReadMore] = useState(false);
   const isTablet = useMediaQuery({
     query: "(max-width: 768px)",
   });

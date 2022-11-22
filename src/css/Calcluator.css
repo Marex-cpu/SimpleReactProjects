@@ -53,6 +53,9 @@
 .output .prevOpernad {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
+  inline-size: 32rem;
+  overflow-wrap: break-word;
+  text-align: right;
 }
 .output .currOperand {
   color: #fff;
@@ -73,8 +76,10 @@
   }
   .output .prevOpernad {
     font-size: 1.2rem;
+    inline-size: 22rem;
   }
   .output .currOperand {
     font-size: 2rem;
+    inline-size: 22rem;
   }
 }

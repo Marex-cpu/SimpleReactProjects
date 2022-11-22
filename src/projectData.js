@@ -21,7 +21,7 @@ export default [
     id: 3,
     projectName: "Tenzies game",
     projectInfo:
-      "Tenzi is the ultimate math game! Like most dice games, Tenzi can be played many ways. The most basic way is for each player to take 10 dice and roll. The first player to get matching numbers on all dice yells “Tenzi!” and wins. This project is based on that idea. Try it and have fun :)",
+      "Tenzi is the ultimate math game! Like most dice games, Tenzi can be played many ways. The most basic way is for each player to take 10 dice and roll. The first player to get matching numbers on all dice yells “Tenzi!” and wins. This project is based on that idea. In this game, the user can freeze the dice by clicking the ones that have the same values, and roll the remaining until all the dice show the same face. The goal of this app is to practice the core features of React, such as useState and useEffect hooks, conditional rendering, as well CSS Grid, used to style the pips of the dice. Try it and have fun :)",
     projectLink: "/tenzies-game",
     textLink: "Tenzies game",
     projectImg: "images/project3.png",
@@ -30,9 +30,9 @@ export default [
     id: 4,
     projectName: "Calculator",
     projectInfo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus temporibus debitis repellendus iusto modi veniam quia. Sequi quas labore ipsum rem! Sed nostrum atque nemo distinctio ipsa repudiandae rerum beatae natus consequuntur qui veniam maxime ad, eligendi sint architecto consequatur id, in quaerat rem expedita? Necessitatibus, atque excepturi? Modi!",
+      'This project is a simple calculator. Helped me to improve the usage even more "useState" hook, and in addition to basic hook, I learned to use additional hook like "useReducer".',
     projectLink: "/calculator-app",
     textLink: "Calculator",
-    // projectImg: "images/project3.png",
+    projectImg: "images/project5.png",
   },
 ];
