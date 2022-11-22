@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/MainReactFacts.css";
-import reactIcon from "../images/reactjs-icon 2.png";
 
 function MainReactFacts(props) {
   return (
@@ -17,7 +16,7 @@ function MainReactFacts(props) {
       <Link className='linkToHome' to='/'>
         Back to home page
       </Link>
-      <img className='reactIcon' src={reactIcon} />
+      <img className='reactIcon' src='images/reactjs-icon 2.png' />
     </main>
   );
 }
