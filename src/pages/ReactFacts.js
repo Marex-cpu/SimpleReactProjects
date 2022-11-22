@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import { useState } from "react";
 import MainReactFacts from "../components/MainReactFacts";
 import NavReactFacts from "../components/NavReactFacts";
 import "../css/ReactFacts.css";
 
 function ReactFacts() {
   const currentThemeColor = localStorage.getItem("nav");
-  const [darkMode, setDarkMode] = React.useState(
+  const [darkMode, setDarkMode] = useState(
     currentThemeColor === "dark" ? true : false
   );
 

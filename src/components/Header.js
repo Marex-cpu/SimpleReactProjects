@@ -9,6 +9,7 @@ function Header() {
       </h1>
       <img
         src='https://revelrylabs.wpenginepowered.com/wp-content/uploads/2019/05/react-native-UX-design.gif'
+        alt='logo'
         className='logo'
       ></img>
     </div>

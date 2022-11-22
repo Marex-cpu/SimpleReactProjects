@@ -16,7 +16,11 @@ function MainReactFacts(props) {
       <Link className='linkToHome' to='/'>
         Back to home page
       </Link>
-      <img className='reactIcon' src='images/reactjs-icon 2.png' />
+      <img
+        className='reactIcon'
+        src='images/reactjs-icon 2.png'
+        alt='react-logo'
+      />
     </main>
   );
 }

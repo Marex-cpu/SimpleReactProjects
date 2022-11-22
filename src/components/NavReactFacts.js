@@ -10,6 +10,7 @@ function NavReactFacts(props) {
           src='images/logo192.png'
           width={50}
           style={{ marginRight: "1rem" }}
+          alt='logo'
         />
         <h3 className='navLogoText'>ReactFacts</h3>
       </div>

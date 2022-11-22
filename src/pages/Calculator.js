@@ -21,7 +21,7 @@ function reducer(state, { type, payload }) {
       if (payload.digit === "." && state.currOperand?.includes(".")) {
         return state;
       }
-      if (payload.digit === "." && state.currOperand == undefined) {
+      if (payload.digit === "." && state.currOperand === undefined) {
         return {
           ...state,
           currOperand: `0${payload.digit}`,

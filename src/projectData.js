@@ -1,4 +1,4 @@
-export default [
+const projectData = [
   {
     id: 1,
     projectName: "React Facts",
@@ -36,3 +36,5 @@ export default [
     projectImg: "images/project5.png",
   },
 ];
+
+export default projectData;

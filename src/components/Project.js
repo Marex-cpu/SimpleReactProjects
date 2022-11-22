@@ -46,7 +46,7 @@ function Project({ projectData, currentIndex }) {
       <img
         className='imgProject'
         src={projectData[currentIndex].projectImg}
-        alt='nesto'
+        alt={projectData[currentIndex].projectName}
       />
     </div>
   );
