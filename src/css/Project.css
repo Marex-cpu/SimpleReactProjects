@@ -32,7 +32,7 @@
   border-radius: 5px;
   margin-bottom: 2rem;
   font-weight: 600;
-  font-size: 2.1rem;
+  font-size: 2rem;
   box-shadow: #61dafb 0px 0px 0px 3px;
 }
 .projectWrapper .projectName span {
@@ -43,6 +43,15 @@
 .projectWrapper .infoProject span {
   font-weight: bold;
   color: #61dafb;
+}
+.projectWrapper .infoProject span .btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2dc9f4;
+  font-style: italic;
 }
 
 .linkToProject > .linkBtn {
@@ -67,6 +76,9 @@
     font-size: 1.8rem;
   }
 
+  .projectWrapper .infoProject span .btn {
+    font-size: 1.8rem;
+  }
   .projectWrapper .imgProject {
     max-width: 50rem;
     max-height: 50rem;
@@ -77,6 +89,9 @@
   .projectWrapper .projectName,
   .infoProject,
   .linkToProject {
+    font-size: 1.6rem;
+  }
+  .projectWrapper .infoProject span .btn {
     font-size: 1.6rem;
   }
   .projectWrapper .imgProject {

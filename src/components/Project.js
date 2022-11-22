@@ -1,9 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Project.css";
-// import projectImage from "../images/project1.png";
+import { useMediaQuery } from "react-responsive";
 
 function Project({ projectData, currentIndex }) {
+  const [readMore, setReadMore] = useState(true);
+  const isTablet = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
   return (
     <div className='projectWrapper'>
       <p className='projectName'>
@@ -12,7 +17,21 @@ function Project({ projectData, currentIndex }) {
       </p>
       <p className='infoProject'>
         Briefly about the project: <br />{" "}
-        <span>{projectData[currentIndex].projectInfo}</span>
+        <span>
+          {!isTablet && projectData[currentIndex].projectInfo}
+          {isTablet &&
+            (readMore
+              ? projectData[currentIndex].projectInfo
+              : `${projectData[currentIndex].projectInfo.substring(
+                  0,
+                  100
+                )}...`)}
+          {isTablet && (
+            <button onClick={() => setReadMore(!readMore)} className='btn'>
+              {readMore ? "^Show Less" : "Read More"}
+            </button>
+          )}
+        </span>
       </p>
       <p className='linkToProject'>
         Link to the project: <br />
@@ -24,7 +43,6 @@ function Project({ projectData, currentIndex }) {
           {projectData[currentIndex].textLink}
         </Link>
       </p>
-      {/* <img className='imgProject' src={projectImage} alt='' /> */}
       <img
         className='imgProject'
         src={projectData[currentIndex].projectImg}
