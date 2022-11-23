@@ -99,3 +99,9 @@
     max-height: 30rem;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .projectWrapper {
+    padding: 1.5rem;
+  }
+}

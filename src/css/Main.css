@@ -69,3 +69,14 @@
     margin-left: 2.5rem;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    padding: 1.5rem;
+  }
+  .containerButtons {
+    bottom: 2.5rem;
+  }
+}
