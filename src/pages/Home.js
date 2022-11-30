@@ -9,8 +9,9 @@ import { useMediaQuery } from "react-responsive";
 
 function Home() {
   const [index, setIndex] = useState(0);
-  const [projects, setProjects] = useState(projectData);
   const [readMore, setReadMore] = useState(false);
+
+  const projects = projectData;
 
   // responsive
   const isTablet = useMediaQuery({
