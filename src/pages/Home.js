@@ -92,6 +92,7 @@ function Home() {
               <section className='projectDetails last'>
                 <p className='sectionTitle last'>Projects were done by:</p>
                 <a
+                  rel='noreferrer'
                   href='https://www.linkedin.com/in/marko-petrovi%C4%87-937b8323a/'
                   target='_blank'
                   className='myName'
