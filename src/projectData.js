@@ -33,7 +33,7 @@ const projectData = [
       'This project is a simple calculator. Helped me to improve the usage even more "useState" hook, and in addition to basic hook, I learned to use additional hook like "useReducer".',
     projectLink: "/calculator-app",
     textLink: "Calculator",
-    projectImg: "images/project5.png",
+    projectImg: "images/project4.png",
   },
 ];
 
