@@ -6,6 +6,7 @@ import projectData from "../projectData";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { useMediaQuery } from "react-responsive";
+import { FaLinkedin } from "react-icons/fa";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -72,7 +73,10 @@ function Home() {
                     ? projectInfo
                     : `${projectInfo.substring(0, 100)}...`}
                   {isTablet && (
-                    <button onClick={() => setReadMore(!readMore)}>
+                    <button
+                      style={{ fontStyle: "italic" }}
+                      onClick={() => setReadMore(!readMore)}
+                    >
                       {readMore ? "^Show Less" : "Read More"}
                     </button>
                   )}
@@ -85,6 +89,16 @@ function Home() {
                 </Link>
               </section>
               <img className='projectImg' src={projectImg} alt={projectName} />
+              <section className='projectDetails last'>
+                <p className='sectionTitle last'>Projects were done by:</p>
+                <a
+                  href='https://www.linkedin.com/in/marko-petrovi%C4%87-937b8323a/'
+                  target='_blank'
+                  className='myName'
+                >
+                  Marko Petrovic <FaLinkedin style={{ marginLeft: "0.5rem" }} />
+                </a>
+              </section>
             </article>
           );
         })}
@@ -97,7 +111,6 @@ function Home() {
           </button>
         </div>
       </main>
-      <footer className='footer'>Powered by Marko Petrovic</footer>
     </div>
   );
 }

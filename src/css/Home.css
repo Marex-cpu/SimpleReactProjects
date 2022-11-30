@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .projectsWrapper {
@@ -79,6 +79,31 @@
   padding-bottom: 0.5rem;
   margin-bottom: 5rem;
 }
+
+.projectsWrapper > .project > .projectDetails.last {
+  font-size: 1.6rem;
+  border: none;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  line-height: 21px;
+}
+.projectsWrapper > .project > .projectDetails.last > .sectionTitle.last {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.projectDetails.last > .myName {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
+  color: #61dafb;
+  transition: color 300ms;
+}
+.projectDetails.last > .myName:hover {
+  color: #2dc9f4;
+}
+
 .sectionTitle {
   border-left: #61dafb 3px solid;
   padding-left: 5px;
@@ -117,8 +142,6 @@
   margin-bottom: 5rem;
   z-index: 1;
   transition: 200ms ease;
-}
-.projectsWrapper .project .projectImg:hover {
   border: 3px solid #61dafb;
 }
 
@@ -165,17 +188,6 @@
   color: #61dafb;
 }
 
-/* footer */
-.footer {
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-style: italic;
-  color: #61dafb;
-  font-size: 1.4rem;
-}
-
 /* responsive */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -191,7 +203,7 @@
 /* tablet */
 @media screen and (max-width: 768px) {
   .container {
-    padding: 1.5rem 1.5rem 3rem;
+    padding: 1.5rem;
   }
   .projectsWrapper > .header {
     padding-left: 0.5rem;
@@ -224,10 +236,11 @@
 /* mobile */
 @media screen and (max-width: 450px) {
   .container {
-    padding: 0 0 3rem;
+    padding: 0;
   }
   .projectsWrapper {
     border-radius: 0;
+    box-shadow: none;
   }
   .projectsWrapper > .header > .heading {
     font-size: 2rem;
@@ -241,15 +254,12 @@
   .projectsWrapper > .project > .projectDetails > .info > button {
     font-size: 1.6rem;
   }
+  .projectsWrapper > .project > .projectDetails.last {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 335px) {
   .container {
     padding: 0;
-  }
-  .projectsWrapper {
-    box-shadow: none;
-  }
-  .footer {
-    display: none;
   }
 }
