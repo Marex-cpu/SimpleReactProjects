@@ -1,4 +1,4 @@
-# Simple React Projets
+# Simple React Projects
 
 The goal of this entire project was to practice React fundamentals like Hooks, State, Props, Conditional Rendering...
 
